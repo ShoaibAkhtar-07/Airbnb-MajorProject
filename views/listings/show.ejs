@@ -2,14 +2,14 @@
 
     <body>
         <div class="row mt-3">
-            <div class="col-8 offset-3">
+            <div class="col-8 offset-2">
                 <b>
                     <h2>
                         <%=listings.title%>
                     </h2>
                 </b>
             </div>
-            <div class="card show-card col-6 offset-3 mb-3 listing-card">
+            <div class="card show-card col-8 offset-2 mb-3 listing-card">
                 <img src="<%=listings.image.url %>" class="card-img-top show-img" alt="Selected_image">
                 <div class="card-body">
                     <p class="card-text">
@@ -38,7 +38,7 @@
                 </div>
                 <%}%>
 
-                    <div class="col-7 offset-3 mt-2.5 mb-3">
+                    <div class="col-8 offset-2 mt-2.5 mb-3">
                         <%if(currUser){%>
                             <form method="post" action="/listings/<%=listings._id%>/reviews" class="needs-validation"
                                 novalidate>
@@ -70,7 +70,7 @@
                                 <button class="btn btn-outline-dark">Submit</button>
                             </form>
                             <%}%>
-                                <hr>
+                                <hr >
                                 <%if(listings.reviews.length>0){%>
                                     <div class="row">
                                         <h5>All Reviews</h5>
@@ -96,7 +96,7 @@
                                     </div>
                                     <%}%>
                     </div>
-                    <div id="map" class="col-7 offset-3 mt-2.5 mb-3" style="height:400px; border:2px solid black">
+                    <div id="map" class="col-8 offset-2 mt-2.5 mb-3" style="height:400px; border:2px solid black">
                     </div>
                     <script>
                         const mapCoords = [<%= listings.geometry.coordinates[1] %>, <%= listings.geometry.coordinates[0] %>];
