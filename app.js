@@ -45,9 +45,6 @@ app.use(express.json());
 app.use(methodOverride("_method"));
 
 
-const dns = require("dns");
-dns.setServers(["1.1.1.1", "0.0.0.0"]);
-
 //DataBase Url
 const dbUrl = "mongodb+srv://ShoaibAkhtar-07:shoaib1234@cluster0.601dysj.mongodb.net/wanderlust?retryWrites=true&w=majority";
 
