@@ -1,0 +1,127 @@
+.wl-page {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    background-color: #fafafa;
+}
+
+.wl-card {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 2.5rem 2.2rem;
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.08);
+}
+
+.wl-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #111;
+    margin: 0 0 0.3rem;
+}
+
+.wl-sub {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 2rem;
+}
+
+.wl-sub a {
+    color: #e8394a;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.wl-field {
+    margin-bottom: 1.2rem;
+}
+
+.wl-label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #444;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.wl-input-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.wl-input-icon {
+    position: absolute;
+    left: 13px;
+    color: #bbb;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.wl-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px 12px 38px;
+    border: 1.5px solid #e5e5e5;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #111;
+    background: #fafafa;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.wl-input:focus {
+    border-color: #e8394a;
+    box-shadow: 0 0 0 3px rgba(232, 57, 74, 0.1);
+    background: #fff;
+}
+
+.wl-input::placeholder {
+    color: #bbb;
+}
+
+.wl-eye {
+    position: absolute;
+    right: 13px;
+    color: #bbb;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.wl-btn {
+    width: 100%;
+    padding: 14px;
+    background: #e8394a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.6rem;
+    transition: background-color 0.2s;
+}
+
+.wl-btn:hover {
+    background: #d42f40;
+}
+
+.wl-terms {
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 1rem;
+}
+
+.wl-terms a {
+    color: #aaa;
+    text-decoration: underline;
+}
